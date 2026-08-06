@@ -1,0 +1,136 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f4f4;
+    color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    color: #ed145b;
+    font-size: 24px;
+}
+
+.header-navigation {
+    display: flex;
+    gap: 16px;
+
+}
+
+.header-navigation a{
+    transition: color 1.5s ease;
+}
+.header-navigation a:hover {
+    color: #ed145b;
+    transition: color 1s ease-in;
+
+}
+
+.events {
+    padding: 60px 0;
+}
+
+.events-intro {
+    max-width: 650px;
+    margin-bottom: 32px;
+}
+
+.events-tag {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #ed145b;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.events-intro h1 {
+    margin-bottom: 12px;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.events-intro p {
+    color: #555
+}
+
+.events-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.event-card {
+    width: 340px;
+    padding: 24px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition:
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.event-card:hover {
+    border-color: #ed145b;
+    transform: translateY(-2px);
+}
+
+.event-card-category {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 6px 10px;
+    background-color: #ffe2ec;
+    color: #b30040;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.event-card-title {
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+
+.event-card-description {
+    margin-bottom: 20px;
+    color: #555555;
+}
+
+.event-card-information {
+    margin-bottom: 24px;
+}
+
+.event-card-information p {
+    margin-bottom: 6px;
+}
