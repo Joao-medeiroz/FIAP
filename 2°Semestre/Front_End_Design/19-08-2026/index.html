@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEV.STUDIO | Flexbox II</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header class="site-header container">
+    <a href="#" class="logo">DEV<span>.STUDIO</span></a>
+    <nav class="menu">
+      <a href="#inicio">Início</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#processo">Processo</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="inicio">
+      <div class="hero-content">
+        <span class="eyebrow">FRONT-END DESIGN</span>
+        <h1>Layouts que <strong>usam melhor o espaço.</strong></h1>
+        <p>Hoje vamos avançar no Flexbox: além de posicionar elementos, vamos controlar quanto espaço cada item ocupa
+          dentro do layout.</p>
+        <div class="hero-actions">
+          <a href="#projetos" class="button button-dark">Ver projetos</a>
+          <a href="#processo" class="button button-light">Nosso processo</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="./images/hero.svg" alt="Ilustração de interface digital">
+      </div>
+    </section>
+
+    <section class="section container" id="projetos">
+      <div class="section-heading">
+        <span class="eyebrow">PROJETOS</span>
+        <h2>Um layout, diferentes proporções.</h2>
+        <p>Os cards abaixo ajudam a observar como o Flexbox distribui espaço disponível entre itens.</p>
+      </div>
+
+      <div class="projects">
+        <article class="card"><span class="card-number">01</span>
+          <h3>Landing Page</h3>
+          <p>Hierarquia visual, conteúdo e chamadas para ação.</p><a href="#">Ver projeto →</a>
+        </article>
+        <article class="card"><span class="card-number">02</span>
+          <h3>Dashboard</h3>
+          <p>Informações organizadas em blocos claros e consistentes.</p><a href="#">Ver projeto →</a>
+        </article>
+        <article class="card"><span class="card-number">03</span>
+          <h3>Portfólio</h3>
+          <p>Projetos, habilidades e experiências em uma única interface.</p><a href="#">Ver projeto →</a>
+        </article>
+        <article class="card"><span class="card-number">04</span>
+          <h3>E-commerce</h3>
+          <p>Produtos, categorias e ações de compra com boa organização.</p><a href="#">Ver projeto →</a>
+        </article>
+        <article class="card"><span class="card-number">05</span>
+          <h3>App Interface</h3>
+          <p>Componentes simples e uma navegação visualmente consistente.</p><a href="#">Ver projeto →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="process-section" id="processo">
+      <div class="container process">
+        <div class="process-intro">
+          <span class="eyebrow">PROCESSO</span>
+          <h2>Do problema à interface.</h2>
+        </div>
+        <div class="process-list">
+          <article class="process-item"><span>01</span>
+            <div>
+              <h3>Entender</h3>
+              <p>Primeiro entendemos o conteúdo e a hierarquia.</p>
+            </div>
+          </article>
+          <article class="process-item"><span>02</span>
+            <div>
+              <h3>Organizar</h3>
+              <p>Depois distribuímos os elementos dentro do espaço disponível.</p>
+            </div>
+          </article>
+          <article class="process-item"><span>03</span>
+            <div>
+              <h3>Refinar</h3>
+              <p>Por fim ajustamos proporção, alinhamento e espaçamento.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta container" id="contato">
+      <div><span class="eyebrow">PRÓXIMO PASSO</span>
+        <h2>CSS é sobre comportamento, não só aparência.</h2>
+      </div>
+      <a href="#" class="button button-dark">Começar projeto</a>
+    </section>
+
+    <section class="flex-lab container">
+
+      <h2>Laboratório Flexbox</h2>
+
+      <div class="lab-container">
+
+        <div class="lab-item item-1">
+          01
+        </div>
+
+        <div class="lab-item item-2">
+          02
+        </div>
+
+        <div class="lab-item item-3">
+          03
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>DEV.STUDIO — Front-End Design</p>
+    <p>FIAP • 2026</p>
+  </footer>
+</body>
+
+</html>

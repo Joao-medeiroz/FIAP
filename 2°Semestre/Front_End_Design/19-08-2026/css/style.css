@@ -1,0 +1,306 @@
+/* =========================================================
+   DEV.STUDIO — FLEXBOX II
+   Aula 19/08/2026
+========================================================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f5f5f2;
+  color: #171717;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* HEADER — conteúdo já revisado na aula anterior */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  padding: 28px 0;
+  border-bottom: 1px solid #d8d8d2;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.logo span {
+  color: #6c4cff;
+}
+
+.menu {
+  display: flex;
+  gap: 24px;
+}
+
+.menu a {
+  color: #555;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+/* HERO */
+.hero {
+  min-height: 610px;
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  padding: 72px 0;
+}
+
+.hero-content {
+
+  flex: 2;
+  /* DESAFIO 1 — faça o conteúdo ocupar aproximadamente 2/3 do espaço */
+}
+
+.hero-image {
+  flex: 1;
+  /* DESAFIO 1 — faça a imagem ocupar aproximadamente 1/3 do espaço */
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #6c4cff;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.hero h1 {
+  max-width: 680px;
+  font-size: clamp(3rem, 6vw, 5.6rem);
+  font-weight: 800;
+  letter-spacing: -0.065em;
+  line-height: 0.95;
+}
+
+.hero h1 strong {
+  display: block;
+  color: #6c4cff;
+  font-weight: inherit;
+}
+
+.hero-content>p {
+  max-width: 580px;
+  margin: 28px 0 34px;
+  color: #606060;
+  font-size: 1.05rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-block;
+  padding: 14px 20px;
+  border-radius: 999px;
+  font-weight: 800;
+}
+
+.button-dark {
+  background: #171717;
+  color: #fff;
+}
+
+.button-light {
+  border: 1px solid #cfcfc8;
+  background: transparent;
+}
+
+.hero-image img {
+  width: 100%;
+}
+
+/* SEÇÃO */
+.section {
+  padding: 96px 0;
+}
+
+.section-heading {
+  max-width: 700px;
+  margin-bottom: 42px;
+}
+
+.section-heading h2,
+.process h2,
+.cta h2 {
+  margin-bottom: 14px;
+  font-size: clamp(2rem, 4vw, 3.6rem);
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.section-heading p,
+.process p {
+  color: #666;
+}
+
+/* CARDS */
+.projects {
+ 
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  /* DESAFIO 2 — permita que os itens quebrem para outra linha */
+}
+
+.card {
+  flex: 1 1 250px;
+  min-height: 250px;
+  padding: 28px;
+  border: 1px solid #d8d8d2;
+  border-radius: 22px;
+  background: #fff;
+  /* DESAFIO 2 — grow 1, shrink 1 e basis 250px */
+}
+
+.card-number {
+  display: inline-block;
+  margin-bottom: 44px;
+  color: #6c4cff;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 1.35rem;
+}
+
+.card p {
+  margin-bottom: 24px;
+  color: #666;
+}
+
+.card a {
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+/* PROCESSO — FLEXBOX ANINHADO */
+.process-section {
+  background: #e8e2ff;
+}
+
+.process {
+  display: flex;
+  gap: 64px;
+  padding: 88px 0;
+}
+
+.process-intro {
+  /* DESAFIO 3 — coluna esquerda = 1 parte */
+}
+
+.process-list {
+  /* DESAFIO 3 — coluna direita = 2 partes */
+}
+
+.process-item {
+  display: flex;
+  gap: 24px;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(23, 23, 23, 0.18);
+}
+
+.process-item:first-child {
+  padding-top: 0;
+}
+
+.process-item>span {
+  font-weight: 900;
+  color: #6c4cff;
+}
+
+.process-item h3 {
+  margin-bottom: 4px;
+}
+
+/* CTA */
+.cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 92px 0;
+}
+
+.cta>div {
+  max-width: 760px;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 28px 0 40px;
+  border-top: 1px solid #d8d8d2;
+  color: #777;
+  font-size: 0.85rem;
+}
+
+.flex-lab {
+  padding: 60px 0;
+}
+
+.flex-lab h2 {
+  margin-bottom: 24px;
+}
+
+.lab-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  padding: 20px;
+
+  border: 2px dashed #6c4cff;
+}
+
+.lab-item {
+  flex-basis: 100px;
+  padding: 30px;
+
+  border-radius: 12px;
+
+  background: #171717;
+  color: #fff;
+
+  text-align: center;
+  font-weight: 900;
+
+}
